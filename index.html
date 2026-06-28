@@ -8,16 +8,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%239c2a1f'/><circle cx='50' cy='50' r='30' fill='%23e8a33d'/><circle cx='50' cy='50' r='30' fill='none' stroke='%23fdf6ec' stroke-width='2' stroke-dasharray='4 5'/></svg>" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%236e1f1d'/><circle cx='50' cy='50' r='42' fill='none' stroke='%23cda24c' stroke-width='2.4'/><ellipse cx='50' cy='44' rx='13' ry='17' fill='%232f6b3a'/><ellipse cx='50' cy='45' rx='8' ry='10' fill='%23c98f2e'/><circle cx='50' cy='46' r='5' fill='%2315577a'/><rect x='28' y='66' width='44' height='7' rx='3.5' fill='%23cda24c'/></svg>" />
 <style>
   :root{
-    --maroon:#9c2a1f;
-    --maroon-deep:#6f1d15;
-    --gold:#e8a33d;
-    --gold-deep:#c9821f;
-    --cream:#fdf6ec;
-    --cream-2:#f6e9d4;
-    --char:#26201c;
+    --maroon:#6e1f1d;
+    --maroon-deep:#491413;
+    --gold:#cda24c;
+    --gold-deep:#a87d31;
+    --cream:#faf1e1;
+    --cream-2:#efe2c7;
+    --char:#2a1414;
     --ink:#3a2c24;
     --muted:#7c6655;
     --green:#3f7d4e;
@@ -49,7 +49,7 @@
     padding:14px 26px;border-radius:999px;font-weight:700;font-size:.95rem;
     transition:.22s transform,.22s box-shadow,.22s background;cursor:pointer;border:none;
   }
-  .btn-primary{background:var(--maroon);color:var(--cream);box-shadow:0 12px 24px -10px rgba(156,42,31,.7)}
+  .btn-primary{background:var(--maroon);color:var(--cream);box-shadow:0 12px 24px -10px rgba(110,31,29,.7)}
   .btn-primary:hover{transform:translateY(-2px);background:var(--maroon-deep)}
   .btn-ghost{background:transparent;color:var(--char);border:1.5px solid rgba(58,44,36,.25)}
   .btn-ghost:hover{border-color:var(--maroon);color:var(--maroon)}
@@ -59,7 +59,7 @@
   /* ---------- Header ---------- */
   header{
     position:sticky;top:0;z-index:50;
-    background:rgba(253,246,236,.82);backdrop-filter:blur(12px);
+    background:rgba(250,241,225,.82);backdrop-filter:blur(12px);
     border-bottom:1px solid rgba(58,44,36,.08);
   }
   .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
@@ -80,8 +80,8 @@
   .hero{
     position:relative;padding:70px 0 80px;
     background:
-      radial-gradient(900px 500px at 85% -10%, rgba(232,163,61,.30), transparent 60%),
-      radial-gradient(700px 500px at -5% 110%, rgba(156,42,31,.12), transparent 55%),
+      radial-gradient(900px 500px at 85% -10%, rgba(205,162,76,.30), transparent 60%),
+      radial-gradient(700px 500px at -5% 110%, rgba(110,31,29,.12), transparent 55%),
       var(--cream);
     overflow:hidden;
   }
@@ -162,7 +162,7 @@
   .menu-table td{padding:13px 26px;border-top:1px dashed rgba(58,44,36,.12);font-size:.96rem}
   .menu-table td:first-child{font-weight:600}
   .menu-table td.price{text-align:right;font-family:'Fraunces',serif;font-weight:600;color:var(--maroon);white-space:nowrap}
-  .menu-table tr:hover td{background:rgba(232,163,61,.08)}
+  .menu-table tr:hover td{background:rgba(205,162,76,.08)}
   .veg{display:inline-block;width:13px;height:13px;border:1.5px solid var(--green);border-radius:3px;position:relative;margin-right:8px;vertical-align:middle}
   .veg::after{content:"";position:absolute;inset:2.5px;background:var(--green);border-radius:50%}
   .pop{font-size:.62rem;background:var(--gold);color:var(--char);font-weight:800;padding:2px 7px;border-radius:99px;margin-left:8px;letter-spacing:.05em;vertical-align:middle}
@@ -180,23 +180,23 @@
   /* ---------- Combos ---------- */
   #combos{background:var(--char);color:var(--cream-2)}
   #combos .section-head h2{color:#fff}
-  #combos .section-head p{color:rgba(253,246,236,.7)}
+  #combos .section-head p{color:rgba(250,241,225,.7)}
   #combos .eyebrow{color:var(--gold)}
   #combos .eyebrow::before{background:var(--gold)}
   .combo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
   .combo{
-    background:linear-gradient(160deg,#352b25,#241d19);border:1px solid rgba(232,163,61,.25);
+    background:linear-gradient(160deg,#3a1f1f,#271313);border:1px solid rgba(205,162,76,.25);
     border-radius:var(--radius);padding:30px 28px;position:relative;overflow:hidden;
     transition:.25s transform;
   }
   .combo:hover{transform:translateY(-6px)}
-  .combo.feat{background:linear-gradient(160deg,#9c2a1f,#6f1d15);border-color:var(--gold)}
+  .combo.feat{background:linear-gradient(160deg,#6e1f1d,#491413);border-color:var(--gold)}
   .combo .ribbon{position:absolute;top:18px;right:-34px;background:var(--gold);color:var(--char);font-size:.66rem;font-weight:800;letter-spacing:.1em;padding:5px 40px;transform:rotate(40deg)}
   .combo h3{color:#fff;font-size:1.5rem;margin-bottom:4px}
   .combo .price{font-family:'Fraunces',serif;font-size:2.4rem;font-weight:900;color:var(--gold);margin:8px 0 18px}
   .combo.feat .price{color:#fff}
   .combo ul{list-style:none;display:grid;gap:10px;margin-bottom:24px}
-  .combo li{display:flex;gap:10px;font-size:.94rem;color:rgba(253,246,236,.85)}
+  .combo li{display:flex;gap:10px;font-size:.94rem;color:rgba(250,241,225,.85)}
   .combo li::before{content:"✓";color:var(--gold);font-weight:800}
   .combo.feat li::before{color:var(--gold)}
   .combo .btn{width:100%;justify-content:center}
@@ -260,22 +260,22 @@
   #contact .eyebrow::before{background:var(--gold)}
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
   #contact h2{color:#fff;font-size:clamp(2rem,3.6vw,2.9rem);margin:14px 0 18px}
-  #contact .lead{color:rgba(253,246,236,.82);margin-bottom:26px;max-width:42ch}
+  #contact .lead{color:rgba(250,241,225,.82);margin-bottom:26px;max-width:42ch}
   .info-list{list-style:none;display:grid;gap:18px}
   .info-list li{display:flex;gap:14px;align-items:flex-start}
-  .info-list .ic{width:42px;height:42px;border-radius:12px;background:rgba(253,246,236,.12);display:grid;place-items:center;flex:none}
+  .info-list .ic{width:42px;height:42px;border-radius:12px;background:rgba(250,241,225,.12);display:grid;place-items:center;flex:none}
   .info-list b{display:block;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
   .order-box{background:#fff;color:var(--ink);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow)}
   .order-box h3{font-size:1.5rem;margin-bottom:6px}
   .order-box p{color:var(--muted);font-size:.94rem;margin-bottom:22px}
   .apps{display:grid;gap:12px;margin-bottom:22px}
   .app-link{display:flex;align-items:center;justify-content:space-between;padding:15px 18px;border:1.5px solid rgba(58,44,36,.14);border-radius:14px;font-weight:700;transition:.2s}
-  .app-link:hover{border-color:var(--maroon);background:rgba(232,163,61,.08)}
+  .app-link:hover{border-color:var(--maroon);background:rgba(205,162,76,.08)}
   .app-link .pill{font-size:.72rem;background:var(--cream-2);padding:4px 10px;border-radius:99px;color:var(--muted);font-weight:700}
   @media(max-width:820px){.contact-grid{grid-template-columns:1fr}}
 
   /* ---------- Footer ---------- */
-  footer{background:var(--char);color:rgba(253,246,236,.7);padding:60px 0 30px}
+  footer{background:var(--char);color:rgba(250,241,225,.7);padding:60px 0 30px}
   .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:34px;margin-bottom:40px}
   .foot-grid h5{color:#fff;font-family:'Fraunces',serif;font-size:1rem;margin-bottom:16px}
   .foot-grid ul{list-style:none;display:grid;gap:10px;font-size:.9rem}
@@ -283,9 +283,9 @@
   .foot-brand p{font-size:.92rem;margin:14px 0;max-width:34ch}
   .foot-brand .name{font-family:'Fraunces',serif;font-weight:900;color:#fff;font-size:1.15rem}
   .socials{display:flex;gap:12px;margin-top:6px}
-  .socials a{width:38px;height:38px;border-radius:10px;background:rgba(253,246,236,.1);display:grid;place-items:center;transition:.2s}
+  .socials a{width:38px;height:38px;border-radius:10px;background:rgba(250,241,225,.1);display:grid;place-items:center;transition:.2s}
   .socials a:hover{background:var(--maroon)}
-  .foot-bot{border-top:1px solid rgba(253,246,236,.12);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.82rem}
+  .foot-bot{border-top:1px solid rgba(250,241,225,.12);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.82rem}
   @media(max-width:820px){.foot-grid{grid-template-columns:1fr 1fr}}
 
   /* floating WA */
@@ -302,17 +302,24 @@
   <div class="wrap nav">
     <a href="#top" class="brand" aria-label="Stuff'd Co. home">
       <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="48" fill="#9c2a1f"/>
-        <circle cx="50" cy="50" r="38" fill="none" stroke="#fdf6ec" stroke-width="1.5" stroke-dasharray="3 4"/>
-        <circle cx="50" cy="50" r="30" fill="#e8a33d"/>
-        <circle cx="50" cy="50" r="30" fill="none" stroke="#c9821f" stroke-width="1.5"/>
-        <circle cx="41" cy="42" r="2.4" fill="#9c2a1f" opacity=".55"/>
-        <circle cx="58" cy="46" r="3" fill="#9c2a1f" opacity=".5"/>
-        <circle cx="50" cy="58" r="2" fill="#9c2a1f" opacity=".5"/>
-        <circle cx="62" cy="58" r="1.6" fill="#9c2a1f" opacity=".45"/>
-        <path d="M36 36 q14 -8 28 4" stroke="#fff" stroke-width="2" fill="none" opacity=".5" stroke-linecap="round"/>
-        <rect x="22" y="68" width="56" height="6" rx="3" fill="#fdf6ec"/>
-        <circle cx="22" cy="71" r="6" fill="#fdf6ec"/><circle cx="78" cy="71" r="6" fill="#fdf6ec"/>
+        <circle cx="50" cy="50" r="49" fill="#6e1f1d"/>
+        <circle cx="50" cy="50" r="44" fill="none" stroke="#cda24c" stroke-width="1.6"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#cda24c" stroke-width="1.4" stroke-dasharray="1.5 4" opacity=".9"/>
+        <!-- peacock feather -->
+        <path d="M50 30 C42 42 42 60 50 74 C58 60 58 42 50 30 Z" fill="#2f6b3a"/>
+        <path d="M50 34 C45 44 45 60 50 72 C55 60 55 44 50 34 Z" fill="#cda24c" opacity=".55"/>
+        <ellipse cx="50" cy="36" rx="11" ry="14" fill="#2f6b3a"/>
+        <ellipse cx="50" cy="36" rx="8" ry="10.5" fill="#c98f2e"/>
+        <ellipse cx="50" cy="37" rx="5.4" ry="7" fill="#c4572a"/>
+        <circle cx="50" cy="37.5" r="3.4" fill="#15577a"/>
+        <circle cx="50" cy="37.5" r="1.5" fill="#0c2e44"/>
+        <!-- flute (bansuri) -->
+        <g transform="rotate(-16 50 64)">
+          <rect x="30" y="61" width="40" height="5" rx="2.5" fill="#cda24c"/>
+          <rect x="30" y="61" width="40" height="5" rx="2.5" fill="none" stroke="#a87d31" stroke-width=".8"/>
+          <circle cx="40" cy="63.5" r="1" fill="#6e1f1d"/><circle cx="46" cy="63.5" r="1" fill="#6e1f1d"/>
+          <circle cx="52" cy="63.5" r="1" fill="#6e1f1d"/><circle cx="58" cy="63.5" r="1" fill="#6e1f1d"/>
+        </g>
       </svg>
       <span class="name">Stuff'd Co.<small>STUFFED WITH LOVE</small></span>
     </a>
@@ -384,22 +391,22 @@
     </div>
     <div class="cards">
       <div class="card">
-        <svg class="ico" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#f6e9d4"/><path d="M20 34c0-7 5-12 12-12s12 5 12 12" stroke="#9c2a1f" stroke-width="3" stroke-linecap="round"/><path d="M16 40h32M32 22v-6" stroke="#c9821f" stroke-width="3" stroke-linecap="round"/></svg>
+        <svg class="ico" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#efe2c7"/><path d="M20 34c0-7 5-12 12-12s12 5 12 12" stroke="#6e1f1d" stroke-width="3" stroke-linecap="round"/><path d="M16 40h32M32 22v-6" stroke="#a87d31" stroke-width="3" stroke-linecap="round"/></svg>
         <h3>Made-to-Order Fresh</h3>
         <p>Nothing pre-cooked. Dough is rolled and stuffed only after you order.</p>
       </div>
       <div class="card">
-        <svg class="ico" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#f6e9d4"/><path d="M22 24c0 8 4 16 10 16s10-8 10-16" stroke="#9c2a1f" stroke-width="3" stroke-linecap="round"/><path d="M22 24h20" stroke="#c9821f" stroke-width="3" stroke-linecap="round"/></svg>
+        <svg class="ico" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#efe2c7"/><path d="M22 24c0 8 4 16 10 16s10-8 10-16" stroke="#6e1f1d" stroke-width="3" stroke-linecap="round"/><path d="M22 24h20" stroke="#a87d31" stroke-width="3" stroke-linecap="round"/></svg>
         <h3>Generous Stuffing</h3>
         <p>We measure every filling so each paratha is loaded, not hollow.</p>
       </div>
       <div class="card">
-        <svg class="ico" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#f6e9d4"/><path d="M32 18l4 9 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1z" fill="#9c2a1f"/></svg>
+        <svg class="ico" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#efe2c7"/><path d="M32 18l4 9 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1z" fill="#6e1f1d"/></svg>
         <h3>Always With Sides</h3>
         <p>Homemade curd, mint chutney & pickle with every stuffed paratha.</p>
       </div>
       <div class="card">
-        <svg class="ico" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#f6e9d4"/><rect x="20" y="22" width="24" height="20" rx="4" stroke="#9c2a1f" stroke-width="3"/><path d="M26 22v-4h12v4M26 32h12" stroke="#c9821f" stroke-width="3" stroke-linecap="round"/></svg>
+        <svg class="ico" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="30" fill="#efe2c7"/><rect x="20" y="22" width="24" height="20" rx="4" stroke="#6e1f1d" stroke-width="3"/><path d="M26 22v-4h12v4M26 32h12" stroke="#a87d31" stroke-width="3" stroke-linecap="round"/></svg>
         <h3>Sealed & Hygienic</h3>
         <p>Curd, chutney & pickle packed in sealed containers, paratha in butter paper.</p>
       </div>
@@ -550,7 +557,7 @@
           <li>Mixed Pickle</li>
           <li>Mint Chutney</li>
         </ul>
-        <a href="https://wa.me/919999999999?text=I'd%20like%20the%20Mini%20Meal%20combo" class="btn btn-ghost" target="_blank" rel="noopener" style="color:var(--cream);border-color:rgba(232,163,61,.5)">Order Mini Meal</a>
+        <a href="https://wa.me/919999999999?text=I'd%20like%20the%20Mini%20Meal%20combo" class="btn btn-ghost" target="_blank" rel="noopener" style="color:var(--cream);border-color:rgba(205,162,76,.5)">Order Mini Meal</a>
       </div>
       <div class="combo feat">
         <span class="ribbon">POPULAR</span>
@@ -572,7 +579,7 @@
           <li>Mixed Pickle</li>
           <li>Mint Chutney</li>
         </ul>
-        <a href="https://wa.me/919999999999?text=I'd%20like%20the%20Family%20Combo" class="btn btn-ghost" target="_blank" rel="noopener" style="color:var(--cream);border-color:rgba(232,163,61,.5)">Order Family Combo</a>
+        <a href="https://wa.me/919999999999?text=I'd%20like%20the%20Family%20Combo" class="btn btn-ghost" target="_blank" rel="noopener" style="color:var(--cream);border-color:rgba(205,162,76,.5)">Order Family Combo</a>
       </div>
     </div>
   </div>
@@ -670,15 +677,15 @@
       <p class="lead">Order on WhatsApp for the fastest service, or find Stuff'd Co. on your favourite delivery app.</p>
       <ul class="info-list">
         <li>
-          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="#e8a33d"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg></span>
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="#cda24c"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg></span>
           <div><b>Kitchen</b>Stuff'd Co., Laxmi Nagar, East Delhi 110092</div>
         </li>
         <li>
-          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="#e8a33d"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z"/></svg></span>
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="#cda24c"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z"/></svg></span>
           <div><b>Call / WhatsApp</b>+91 99999 99999</div>
         </li>
         <li>
-          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="#e8a33d"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.6 4 2.4-.8 1.3L11 13V6h2Z"/></svg></span>
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="#cda24c"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.6 4 2.4-.8 1.3L11 13V6h2Z"/></svg></span>
           <div><b>Open Daily</b>8:00–11:30 AM &amp; 2:30–10:00 PM<br><span style="font-size:.82rem;opacity:.75">Offline during school hours</span></div>
         </li>
       </ul>
@@ -706,19 +713,28 @@
       <div class="foot-brand">
         <div class="brand" style="gap:12px">
           <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
-            <circle cx="50" cy="50" r="48" fill="#9c2a1f"/>
-            <circle cx="50" cy="50" r="38" fill="none" stroke="#fdf6ec" stroke-width="1.5" stroke-dasharray="3 4"/>
-            <circle cx="50" cy="50" r="30" fill="#e8a33d"/>
-            <rect x="22" y="68" width="56" height="6" rx="3" fill="#fdf6ec"/>
-            <circle cx="22" cy="71" r="6" fill="#fdf6ec"/><circle cx="78" cy="71" r="6" fill="#fdf6ec"/>
+            <circle cx="50" cy="50" r="49" fill="#6e1f1d"/>
+            <circle cx="50" cy="50" r="44" fill="none" stroke="#cda24c" stroke-width="1.6"/>
+            <circle cx="50" cy="50" r="40" fill="none" stroke="#cda24c" stroke-width="1.4" stroke-dasharray="1.5 4" opacity=".9"/>
+            <path d="M50 30 C42 42 42 60 50 74 C58 60 58 42 50 30 Z" fill="#2f6b3a"/>
+            <ellipse cx="50" cy="36" rx="11" ry="14" fill="#2f6b3a"/>
+            <ellipse cx="50" cy="36" rx="8" ry="10.5" fill="#c98f2e"/>
+            <ellipse cx="50" cy="37" rx="5.4" ry="7" fill="#c4572a"/>
+            <circle cx="50" cy="37.5" r="3.4" fill="#15577a"/>
+            <circle cx="50" cy="37.5" r="1.5" fill="#0c2e44"/>
+            <g transform="rotate(-16 50 64)">
+              <rect x="30" y="61" width="40" height="5" rx="2.5" fill="#cda24c"/>
+              <circle cx="40" cy="63.5" r="1" fill="#6e1f1d"/><circle cx="46" cy="63.5" r="1" fill="#6e1f1d"/>
+              <circle cx="52" cy="63.5" r="1" fill="#6e1f1d"/><circle cx="58" cy="63.5" r="1" fill="#6e1f1d"/>
+            </g>
           </svg>
           <span class="name">Stuff'd Co.</span>
         </div>
         <p>Stuffed with love, made by Maa. Freshly stuffed parathas served with homemade curd, mint chutney & pickle — made to order, every order.</p>
         <div class="socials">
-          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fdf6ec"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.1.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.1-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.1-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.1 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 3.2A6.6 6.6 0 1 0 12 18.6 6.6 6.6 0 0 0 12 5.4Zm0 10.9a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6Zm6.8-11.2a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg></a>
-          <a href="https://wa.me/919999999999" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fdf6ec"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Z"/></svg></a>
-          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fdf6ec"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l.5-3H13v-2c0-.6.4-1 1-1Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="#faf1e1"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.1.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.1-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.1-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.1 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 3.2A6.6 6.6 0 1 0 12 18.6 6.6 6.6 0 0 0 12 5.4Zm0 10.9a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6Zm6.8-11.2a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg></a>
+          <a href="https://wa.me/919999999999" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="#faf1e1"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="#faf1e1"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l.5-3H13v-2c0-.6.4-1 1-1Z"/></svg></a>
         </div>
       </div>
       <div>
